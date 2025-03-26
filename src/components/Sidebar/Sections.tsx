@@ -30,10 +30,10 @@ function Buttons(): JSX.Element {
         <>
         <div className="sidebar-section">
             <h3>Actions</h3>
-            <button className="sidebar-button" onClick={ addChangesToResume() }>
+            <button className="sidebar-button" onClick={(_) => {addChangesToResume()} }>
                 <i className="fas fa-magic"></i> Optimize Resume
             </button>
-            <button className="sidebar-button" onClick={createPDFFromHTML()}>
+            <button className="sidebar-button" onClick={(_) => {createPDFFromHTML()} }>
                 <i className="fas fa-download"></i> Download PDF
             </button>
         </div>
